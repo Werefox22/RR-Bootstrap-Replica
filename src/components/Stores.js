@@ -28,7 +28,7 @@ function Stores() {
 
 	const storeCards = stores.map((store, i) => {
 		return (
-			<div style={{border: '1px solid lightGray', borderRadius: '5px', width: '350px', display: 'flex', padding: '10px'}}>
+			<div style={{border: '1px solid lightGray', borderRadius: '5px', width: '350px', display: 'flex', padding: '10px', margin: 'auto'}}>
 				<Image roundedCircle src={store.imgSrc} style={{width: '50px', border: '1px solid lightGray', margin: '0 25px'}}/>
 				<h3 style={{display: 'inline-block'}}>{store.name}</h3>
 			</div>
@@ -51,10 +51,13 @@ function Stores() {
 		<Container>
 			<h1>Choose your store in Raleigh-Durham</h1>
 			<Row style={{margin: '1em'}}>
-				{getColumns(0, 3)}
+				{getColumns(0, 2)}
 			</Row>
 			<Row style={{margin: '1em'}}>
-				{getColumns(3, 3)}
+				{getColumns(2, 2)}
+			</Row>
+			<Row style={{margin: '1em'}}>
+				{getColumns(4, 2)}
 			</Row>
 		</Container>
 	)
